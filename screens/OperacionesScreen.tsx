@@ -27,14 +27,12 @@ export default function OperacionesScreen({ navigation }: any) {
             return
         }
 
-        // Verificar si el precio es negativo
         if (precioNum < 0) {
             Alert.alert("Error", "El precio no puede ser negativo")
             alert("El precio no puede ser negativo")
             return
         }
 
-        // Si está fuera del rango 1-20, mostrar confirmación
         if (precioNum < 1 || precioNum > 20) {
             Alert.alert(
                 "Precio fuera del rango",
